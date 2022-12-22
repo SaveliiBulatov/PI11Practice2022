@@ -4,7 +4,7 @@ Maze m = new Maze(ConsoleColor.Red, ConsoleColor.Yellow);
 
 while (true)
 {
-    m.Print(5, 19, "Вы оказались в лабиринте.Вам нужно собрать монетки,купить на них ключ и открыть им дверь.Это условия для победы");
+    m.Print(5, 19, "Вы оказались в лабиринте.Вам нужно собрать монетки,купить на них ключ и открыть им дверь.Но не все так просто");
 
 
     m.Print(3, 3);
@@ -12,18 +12,18 @@ while (true)
     {
         Console.CursorVisible = false;
         Console.Clear();
-        m.Print(5, 25, "Вы выбрались");
+        m.Print(5, 25, "Вы спаслись");
         
     }
     if (m.score)
     {
         m.score = false;
-        m.Print(5, 20, $"вы собрали {m.coins} монет");
+        m.Print(5, 20, $"вы собрали {m.coins} деняг");
         //
         if (m.coins == 5)
         {
 
-            m.Print(5, 21, "Вы можете купить ключ");
+            m.Print(5, 21, "Вы можете купить ключик");
  
             m.maze = new int[,]
     {
@@ -44,7 +44,7 @@ while (true)
 
             if (m.key1 == true)
             {
-                m.Print(5, 22, "Вы подобрали ключ");
+                m.Print(5, 22, "Вы купили ключ");
             }
 
 
