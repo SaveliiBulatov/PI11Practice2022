@@ -53,7 +53,7 @@ class Maze
         }
         if (maze[ny, nx] == 2 && coins == 5)
         {
-            Print(3, 24, "Вы купили ключ");
+            Print(3, 24, "Вы купили ключикб не золотой но все же");
             key1 = true;
             playerx = 1;
             playery = 1;
